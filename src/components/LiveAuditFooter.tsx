@@ -1,5 +1,5 @@
-// src/components/LiveAuditFooter.tsx
-import { ShieldCheck, Activity, Cpu } from 'lucide-react';
+
+
 
 const LOGS = [
   "EM BUSCA DE EMPREGO", "EM BUSCA DE EMPREGO", "EM BUSCA DE EMPREGO", 

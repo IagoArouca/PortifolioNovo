@@ -1,5 +1,5 @@
 // src/components/SystemStatus.tsx
-import { Activity, Cpu, Zap, Database, Brain, Users, Lightbulb, MessageSquare } from 'lucide-react';
+import { Activity, Cpu, Zap, Database, Brain, Users, Lightbulb,  } from 'lucide-react';
 
 interface SkillProps {
   label: string;
