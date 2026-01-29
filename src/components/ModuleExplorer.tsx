@@ -42,7 +42,6 @@ export function ModuleExplorer() {
       tech: ["Vagrant", "Docker"],
       description: "Criei e provisionei um cluster Docker Swarm completo (1 Gerente e 3 Workers) usando Vagrant e VirtualBox para gerenciar as VMs Ubuntu.",
       githubUrl: "https://github.com/IagoArouca/Cluster-Docker-Swarm",
-
     }
   ];
 
@@ -79,6 +78,7 @@ export function ModuleExplorer() {
         </div>
 
         <div className="p-6 space-y-8 bg-black/20">
+
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-slate-500 px-2">
               <BarChart3 size={12} />
@@ -89,6 +89,14 @@ export function ModuleExplorer() {
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=IagoArouca&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981" 
                 alt="Top Languages"
                 className="max-w-full"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('eight-theta')) {
+                    target.src = "https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=IagoArouca&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981";
+                  } else {
+                    target.style.display = 'none'; 
+                  }
+                }}
               />
             </div>
           </div>
@@ -107,6 +115,7 @@ export function ModuleExplorer() {
                   filter: 'invert(1) hue-rotate(180deg) brightness(0.8)',
                   mixBlendMode: 'lighten'
                 }}
+                onError={(e) => e.currentTarget.style.display = 'none'}
               />
             </div>
           </div>
