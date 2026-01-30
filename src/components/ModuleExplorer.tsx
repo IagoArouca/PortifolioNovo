@@ -12,7 +12,7 @@ export function ModuleExplorer() {
       description: "Sistema de monitorização de integridade e auditoria de acessos. Implementa análise de logs em tempo real.",
       isCritical: true,
       githubUrl: "https://github.com/IagoArouca/SecurityLogs", 
-      deployUrl: "https://security-logs-9gm9lpj43-iago-aroucas-projects.vercel.app/" 
+      deployUrl: "https://security-logs.vercel.app/login" 
     },
     {
       id: "PROJETO 2",
